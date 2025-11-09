@@ -6,7 +6,7 @@ public class CalcPi {
 	int minutes = Integer.parseInt("" + args[0].charAt(3) + args[0].charAt(4)); 
 	int minutesToAdd = Integer.parseInt(args [1]);
 	int TotalMinutes = minutes + minutesToAdd;
-	int NewHours = hours + (TotalMinutes / 60) % 24;
+	int NewHours = (hours + (TotalMinutes / 60)) % 24;
 	int NewMinutes = (TotalMinutes % 60); 
 
 	if (NewHours >= 24){
@@ -25,6 +25,6 @@ public class CalcPi {
 	} else {
 		minutesString = "" + NewMinutes;
 	}
-	System.out.println(hoursString + " : " + minutesString);
+	System.out.println(hoursString + ":" + minutesString);
 	}
 }
