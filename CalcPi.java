@@ -25,6 +25,6 @@ public class CalcPi {
 	} else {
 		minutesString = "" + NewMinutes;
 	}
-	System.out.println(hoursString + ":" + minutesString);
+	System.out.println(hoursString + " : " + minutesString);
 	}
 }
