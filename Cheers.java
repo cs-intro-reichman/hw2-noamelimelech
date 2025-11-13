@@ -10,7 +10,7 @@ public class Cheers {
         public static void main(String[] args) {
 String name = args[0];
 name = name.toUpperCase(); // פונקציה של סטרינג שהופכת את כל המחרוזת לאותיות גדולות
-String anLetters = "AEFHILMNOR";
+String anLetters = "AEFHILMNORSX";
 int times = Integer.parseInt(args[1]);
 for (int i = 0; i < name.length(); i++) {
         char current = name.charAt(i);
