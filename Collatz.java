@@ -6,22 +6,22 @@ public class Collatz {
         for (int i = 1; i <= number; i++) {
             int current = i;
             int max = i;
+
             while (current != 1) {
                 System.out.print(current + " ");
+
                 if (current % 2 == 0) {
                     current = current / 2;
                 } else {
                     current = 3 * current + 1;
                 }
-                // נעדכן את המקסימום רק אחרי שחישבנו את המספר החדש
+
                 if (current > max) {
                     max = current;
                 }
             }
-
             System.out.println("1 (" + max + ")");
         }
-
         System.out.println("Every one of the first " + number + " hailstone sequences reached 1.");
     }
 }
