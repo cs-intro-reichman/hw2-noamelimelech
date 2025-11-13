@@ -9,7 +9,7 @@ public class CalcPi {
 		result = result + term;
 		}
 				double calc = result * 4;
-				System.out.println("pi, approximated: " + calc);
+				System.out.println("pi, approximated:     " + calc);
 
 		}
 
